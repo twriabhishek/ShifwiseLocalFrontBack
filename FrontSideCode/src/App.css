@@ -1,0 +1,1133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --iconsBgColor: #80e5ec;
+  --buttonHoverBgColor: #2de1ee;
+  --iconsColor: black;
+  --subiconsColor: black;
+  --rootClientNameBgColor: rgb(233, 232, 232);
+  --bodyColor: #cbedf0;
+  --headingColor: #0056b3;
+  --buttonColor: black;
+  --buttonBgColor: #80e5ec;
+  --subMenuBgColor: #07a8ff;
+  --tableBgColor: rgb(134, 133, 133);
+  --tableHeadColor: white;
+  --modalpopBoxBgColor: rgb(233, 232, 232);
+  --navLinkActiveColor: red;
+  --tableTbodyTr: #d0f1f3;
+}
+body {
+  background-color: var(--bodyColor);
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+h4 {
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 3px;
+  color: var(--headingColor);
+}
+
+.myEditIcons {
+  margin-top: 10px;
+}
+.myEditIcons:hover {
+  margin-top: 10px;
+  color: white;
+}
+
+/* Role table */
+
+/* Company Logo */
+.companyLogo {
+  margin-top: 4px;
+  width: 40px;
+}
+
+/* copyRight */
+.copyRight {
+  position: fixed;
+  bottom: 0;
+  font-weight: 500;
+}
+/* Homepage */
+.homepageImg {
+  width: 100vw;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.userModuleEditDeleteIcons {
+  background-color: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  border: 3px solid green;
+  cursor: pointer;
+}
+.userModuleEditDeleteIcons:hover {
+  background-color: var(--buttonBgColor);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  border: 3px solid green;
+  cursor: pointer;
+}
+.userModuleIcons {
+  color: rgb(85, 83, 83);
+  margin-top: 3px;
+  font-size: 2px;
+  align-items: center;
+}
+.userModuleIcons:hover {
+  color: black;
+  margin-top: 3px;
+}
+
+#VendorSection table tbody tr {
+  padding: 0px;
+  margin: 0px;
+}
+
+.modelCancelButton {
+  font-size: 30px;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+.modelCancelButton:hover {
+  color: var(--headingColor);
+}
+.namespaceIcons {
+  cursor: pointer;
+}
+.namespaceIcons:hover {
+  color: var(--headingColor);
+}
+
+.systemFormControl {
+  border: 1px solid black;
+  border-radius: 20px;
+}
+input.form-control:focus {
+  outline-color: #ff0000 !important;
+}
+
+.forgetpassword {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(25, 214, 209);
+  background: linear-gradient(
+    324deg,
+    rgba(25, 214, 209, 1) 5%,
+    rgba(77, 178, 195, 1) 43%,
+    rgba(220, 243, 255, 1) 100%
+  );
+}
+
+.SystemUpdateButton {
+  background-color: var(--buttonBgColor);
+  color: var(--buttonColor);
+  border: 2px solid black;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px 20px 5px;
+  padding: 6px 18px;
+}
+.SystemUpdateButton:hover {
+  background-color: var(--buttonHoverBgColor);
+  color: var(--buttonColor);
+  border: 2px solid white;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+
+.buttonStyling {
+  background-color: var(--buttonBgColor);
+  color: var(--buttonColor);
+  border: 2px solid black;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px 20px 5px;
+}
+
+.buttonStyling:hover {
+  background-color: var(--buttonHoverBgColor);
+  color: var(--buttonColor);
+  border: 2px solid white;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+
+#ShiftAddUser button {
+  background-color: var(--buttonBgColor);
+  color: var(--buttonColor);
+  border: 2px solid black;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px 20px 5px;
+  width: 150px;
+  height: 45px;
+}
+
+#UserModuleBtn {
+  background-color: var(--buttonBgColor);
+  color: var(--buttonColor);
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px 20px 5px;
+}
+
+#UserModuleBtn:hover,
+.UserModuleBtn:focus {
+  box-shadow: inset -3.5em 0 0 0 var(red), inset 3.5em 0 0 0 var(red);
+}
+
+.nameSpaceEdit .select {
+  border: 1px solid black;
+}
+
+#UserModuleBtn:hover {
+  background-color: var(--buttonHoverBgColor);
+  border: 2px solid white;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+
+#UserModuleBtn:disabled {
+  background-color: lightgray;
+  color: gray;
+  border: 2px solid lightgray;
+}
+
+#VendorModel {
+  background-color: var(--buttonHoverBgColor);
+  color: var(--buttonColor);
+  border: 1px solid black;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 160px;
+}
+
+/* Table Section */
+#tableStartingStyling {
+  padding: 10px;
+}
+
+table thead {
+  background-color: var(--tableBgColor);
+  position: sticky;
+  top: 0;
+}
+table thead th {
+  text-align: center;
+  color: var(--tableHeadColor);
+  border: 1px solid black;
+}
+table tbody tr td {
+  border: 1px solid black;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+table tbody tr {
+  text-align: center;
+  background-color: var(--tableTbodyTr);
+}
+
+table tbody tr:hover {
+  text-align: center;
+  background-color: var(--tableBgColor);
+  color: white;
+  font-weight: 600;
+}
+
+table {
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.table_overflow {
+  height: 60vh;
+
+  margin-top: 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#iconsColor {
+  background-color: var(--iconsBgColor);
+  color: var(--iconsColor);
+}
+
+#iconsbar {
+  padding: 0px 3px;
+  height: 89.9vh;
+}
+.icons_font_size {
+  padding-left: 6px;
+}
+.submenu_icons {
+  color: black;
+}
+
+/* RootNavbarSection Starting*/
+#rootNavSection:hover .dropdown-menu {
+  display: block;
+}
+
+/* RootNavbarSection Ending */
+/* .dropdown:hover .dropdown-menu {
+  display: block;
+} */
+
+/* Hide the Master submenu by default */
+.dropdown-menu > li > ul {
+  display: none;
+}
+
+/* Display the Master submenu when hovering over the "Master" link */
+.dropdown:hover .dropdown-menu > li:hover > ul {
+  display: block;
+}
+
+/* Additional styling to handle clicks on the "Master" link */
+.dropdown-menu > li > ul {
+  position: absolute;
+}
+
+/* Hide the submenu when not hovering over the "Master" link */
+.dropdown-menu > li:not(:hover) > ul {
+  display: none;
+}
+
+#RootClientName {
+  width: 100%;
+  height: 50px;
+  background-color: var(--rootClientNameBgColor);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bordered-input {
+  border: 2px solid #000;
+  padding: 3px;
+}
+.editing-input {
+  border: 2px solid #000;
+  margin: 1rem;
+  padding: 2px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+input[type="text"] {
+  margin-bottom: 10px;
+}
+
+.confirmation-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.confirmation-modal p {
+  margin: 0 0 20px;
+}
+
+.confirmation-modal button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.confirmation-modal button:hover {
+  background-color: #ccc;
+}
+
+.bordered-input {
+  border: 2px solid #000;
+  padding: 3px;
+}
+.editing-input {
+  border: 2px solid #000;
+  margin: 1rem;
+  padding: 2px;
+}
+
+input[type="text"] {
+  margin-bottom: 10px;
+}
+
+.comic-button {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--buttonColor);
+  background-color: var(--buttonBgColor);
+  margin-right: 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 120px;
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.modal-content button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3;
+}
+
+.line-numbered-textarea {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  height: auto;
+}
+.line-numbers {
+  flex: 0 0 auto;
+  background-color: #f0f0f0;
+  padding: 0 1px;
+  border-right: 1px solid #ddd;
+  overflow-y: scroll;
+  max-height: 100%;
+  font-size: 14px;
+}
+
+.text-area-container {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.fixed-text-area {
+  width: 95%;
+  height: 150px;
+  border: 2px solid #ddd;
+  outline: none;
+  padding: 0px;
+  resize: none;
+  margin-left: -1px;
+  font-size: 14px;
+}
+
+/* Navbar Slidebar Starting*/
+#SlideBarMaster {
+  margin-left: 100px;
+}
+
+/* Navbar SlideBar Ending */
+#loginId {
+  background-color: var(--loginBgColor);
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loginId h4 {
+  margin-top: 10px;
+}
+.paper {
+  padding: 20px;
+  height: 80vh;
+  width: 370px;
+  margin: auto;
+}
+.avatar {
+  color: green;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sec__one {
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding: 60px 0;
+}
+.sec__one h1 {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: #07a8ff;
+  font-family: "Inter", sans-serif;
+}
+.navBar .logo img {
+  float: left;
+  max-height: 120px;
+}
+
+.navBar .col-md-3 {
+  z-index: 7;
+}
+ul.main-menu {
+  display: inline-flex;
+  list-style: none;
+  margin: 0px auto 0;
+  padding: 0;
+  float: right;
+  z-index: 7;
+}
+ul.main-menu > li.menu-item:first-child {
+  padding-left: 0;
+  margin-left: 0;
+}
+.menu-item {
+  line-height: 23px;
+}
+li {
+  list-style-type: none;
+}
+.menu-item a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  position: relative;
+  display: block;
+  color: #ffffff;
+  margin: 27px 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.component-spacing {
+  margin-bottom: 200px;
+}
+
+.card-default-text {
+  color: black !important;
+}
+
+#userModule {
+  padding-top: 10px;
+}
+#userModule h4 {
+  font-weight: 700;
+}
+
+.table-header .head {
+  background-color: var(--tableBgColor);
+  color: white;
+  /* font-size: 14px; */
+  font-size: 0.8rem;
+  font-weight: 600;
+  max-width: 150px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  margin: 10px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.switch {
+  position: relative;
+  height: 1.5rem;
+  width: 3rem;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 9999px;
+  background-color: rgba(100, 116, 139, 0.377);
+  transition: all 0.3s ease;
+}
+
+.switch:checked {
+  background-color: var(--buttonBgColor);
+}
+
+.switch::before {
+  position: absolute;
+  content: "";
+  left: calc(1.5rem - 1.6rem);
+  top: calc(1.5rem - 1.6rem);
+  display: block;
+  height: 1.6rem;
+  width: 1.6rem;
+  cursor: pointer;
+  border: 1px solid rgba(100, 116, 139, 0.527);
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 3px 10px rgba(100, 116, 139, 0.327);
+  transition: all 0.3s ease;
+}
+
+.switch:hover::before {
+  box-shadow: 0 0 0px 8px rgba(0, 0, 0, 0.15);
+}
+
+.switch:checked:hover::before {
+  box-shadow: 0 0 0px 8px rgba(77, 175, 80, 0.15);
+}
+
+.switch:checked:before {
+  transform: translateX(100%);
+  border-color: rgba(77, 175, 80, 1);
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.summary {
+  border: 1px solid #ccc;
+  padding: 5px 15px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  max-width: 1200px;
+}
+
+.text-centers {
+  text-align: center;
+}
+.actions-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5px;
+}
+
+.namespace-table {
+  width: 100%;
+}
+
+.namespace-table th:last-child,
+.namespace-table td:last-child {
+  width: 150px;
+}
+
+.bordered-input {
+  border: 2px solid #000;
+  padding: 3px;
+}
+.editing-input {
+  border: 2px solid #000;
+  margin: 1rem;
+  padding: 2px;
+}
+
+input[type="text"] {
+  margin-bottom: 10px;
+}
+
+.fixed-text-area {
+  width: 95%;
+  height: 150px;
+  border: 2px solid #ddd;
+  outline: none;
+  padding: 0;
+  resize: none;
+  margin-left: -1px;
+  font-size: 14px;
+}
+
+.table-container {
+  margin: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* z-index: 999; */
+}
+
+.modal-content {
+  background-color: var(--modalpopBoxBgColor);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 600px;
+  text-align: center;
+}
+
+.table_overflow {
+  height: 60vh;
+  overflow: auto;
+
+  margin-top: 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content label {
+  display: flex;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 2px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.modal-content button {
+  background-color: var(--buttonBgColor);
+  color: var(--buttonColor);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: var(--buttonHoverBgColor);
+}
+
+.modal-content button.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #888;
+}
+
+.modal-content button.close-button:hover {
+  color: #555;
+}
+#card {
+  width: 450px;
+  margin: 30px;
+
+  margin: 0px auto;
+}
+.centeredCard {
+  display: flex;
+
+  margin: 30px;
+}
+.user {
+  margin: 20px;
+}
+#profile {
+  margin: 10px;
+  height: 600px;
+  width: 500px;
+}
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 30px;
+}
+.profile_fields {
+  margin: 0px auto;
+  margin-left: 15px;
+}
+.avatar-enhancements {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #4caf50;
+}
+.welcome {
+  align-items: center;
+  margin: 100px;
+  margin-left: 380px;
+  color: #3498db; /* Change to your desired color */
+  font-weight: bold;
+  font-size: 40px; /* Change to your desired font size */
+  font-family: "Arial", sans-serif;
+}
+#client-name {
+  color: rgb(161, 83, 83);
+  font-weight: bold;
+  font-size: 20px;
+}
+.icon-button {
+  padding: 2px;
+}
+.table-body {
+  font-size: 0.5rem;
+}
+.table-body td:nth-child(10) {
+  max-width: 150px;
+  overflow: hidden;
+}
+.table-body .MuiSwitch-root {
+  padding-left: 15px;
+}
+.table-body .MuiSwitch-root .MuiSwitch-thumb {
+  padding-right: 10px;
+}
+.css-1ex1afd-MuiTableCell-root {
+  padding: 7px;
+}
+/* .customTableCell {
+  padding: 1px !important;
+  padding-top: 0px !important ;  
+  padding-bottom: 0px !important ;
+  
+  
+} */
+.externalCustomTableCell {
+  padding: 1px !important;
+  padding-top: 0px !important ;
+  padding-bottom: 0px !important ;
+}
+/*view-client*/
+.view-client {
+  /* align-items: center; */
+  display: flex;
+  width: 28rem;
+}
+.client-details {
+  margin: 20px;
+}
+#client-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  /* color: #36d7b7; */
+}
+.client-footer {
+  margin-bottom: 15px;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  /* height: 100vh;  */
+}
+
+/* System config css*/
+.system-config-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dropdown-row-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown-container {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.label {
+  margin-bottom: 5px;
+}
+
+.select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.selected-values-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.sum-system-config {
+  border: 1px solid #ccc;
+  padding: 5px 15px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  max-width: 1000px;
+}
+
+.button-blue {
+  background-color: blue;
+  color: white;
+  padding: 8px 16px;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.button-small {
+  font-size: 12px;
+}
+
+.centered-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.selected-system-config-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/*  CSS for namespace warning message */
+
+.warning-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 20px auto 0;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.warning-message strong {
+  font-weight: bold;
+}
+
+/* schedulerSection start */
+#schedulerSection {
+  margin: 20px;
+}
+
+#schedulerSection .btn {
+  width: 120px;
+}
+#schedulerSection .row {
+  margin: 20px 0px;
+}
+#schedulerSection label {
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+#schedulerSection .form-control {
+  margin-bottom: 15px;
+}
+
+#schedulerTable {
+  margin: 20px;
+}
+/* schedulerSection End */
+
+/* Service Section Starting */
+#ServiceButton {
+  background-color: var(--buttonBgColor);
+  color: var(--buttonColor);
+  border: 2px solid black;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px 20px 5px;
+  padding: 7px;
+  width: 110px;
+  height: 46px;
+}
+
+#ServiceButton:hover {
+  background-color: var(--buttonHoverBgColor);
+  color: var(--buttonColor);
+  border: 2px solid white;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  padding: 7px;
+  width: 110px;
+  height: 46px;
+}
+/* Service Section Ending */
+/* Vendor.css */
+.modal.draggable {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1050;
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.3rem;
+  outline: none;
+}
+
+/* Add your custom styling for the "Save Changes" button */
+.btn-save-changes {
+  background-color: #80e5ec; /* Change the background color */
+  color: black; /* Change the text color */
+  /* Add any other styling you want */
+
+  /* Override hover styles */
+  &:hover {
+    background-color: #80e5ec; /* Keep the same background color as normal state */
+    color: black; /* Keep the same text color as normal state */
+  }
+}
+
+
+/* HolidayConfigurator.css */
+
+.holiday-configurator {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select,
+button {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.apply-leave-button {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.leave-applied-message {
+  color: #4caf50;
+  margin-top: 10px;
+}
+
+/* Custom styles for narrower and centered alerts */
+.custom-alert {
+  max-width: 300px; /* Adjust the max-width as needed */
+  width: 100%;
+  margin: 0 auto; /* Center the alert */
+}

@@ -1,0 +1,8 @@
+hazelcast:
+   cluster-name: StoreCache
+   map:
+    storeCache:
+   network:
+    join:
+      multicast:
+        enabled: true

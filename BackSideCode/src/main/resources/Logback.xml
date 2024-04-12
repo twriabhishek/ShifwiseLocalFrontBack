@@ -1,0 +1,27 @@
+<configuration>
+	<!-- Console Appender with ANSI color encoding -->
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %highlight(%-5level)
+				%cyan(%logger{36}) [%magenta(%class.%method)] - %msg%n</pattern>
+			<charset>utf-8</charset>
+		</encoder>
+	</appender>
+
+
+	<!-- File Appender with a separate folder -->
+	<appender name="file" class="ch.qos.logback.core.FileAppender">
+		<file>src/main/resources/myapp.log</file> <!-- Specify the desired path -->
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36}
+				[%class.%method] - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+
+	<!-- Root Logger -->
+	<root level="INFO">
+		<appender-ref ref="console" />
+		<appender-ref ref="file" />
+	</root>
+</configuration>
